@@ -88,4 +88,17 @@ public class UserDAO {
 		
 		return users;
 	} 
+	
+	public boolean authenticateUser(String userName, String password){
+		Session session = sessionFactory.openSession();;
+		session.beginTransaction();		
+		
+		/*User user = (User) session.get(User.class, 1);*/
+		String hql = "FROM " + User.class.getName() + " as u WHERE u.userName = '"+userName+"' and u.password = '"+password+"'"; 
+		int num_registers = session.createQuery(hql).list().size();
+		
+		session.close();
+		
+		return num_registers > 0 ? true : false;
+	} 
 }

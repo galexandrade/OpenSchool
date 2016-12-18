@@ -100,4 +100,17 @@ public class UserService {
 		
 		return result;
 	}
+	
+	@GET
+	@Path("/authenticate/{login}/{password}")
+	@Consumes(MediaType.TEXT_PLAIN)
+	@Produces(MediaType.TEXT_PLAIN)
+	public boolean authenticateUser(@PathParam("login") String login, @PathParam("password") String password){
+		try{
+			return UserDAO.getInstance().authenticateUser(login, password);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return false;
+	}
 }
