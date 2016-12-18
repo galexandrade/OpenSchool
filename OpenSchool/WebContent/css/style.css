@@ -1,0 +1,71 @@
+body{
+    background: #bdd7e5 url("../imgs/BG.PNG") no-repeat center;
+    padding-top: 80px;
+}
+
+.panel{
+    margin-bottom: 5px;
+}
+
+.menu-nav-left .listgroup a{
+    border-radius: 0px;    
+}
+
+.conteudo_panel{
+    background: white;
+    border-radius: 8px;
+    border: 1px solid;
+    color:black;
+}
+
+.conteudo_panel_int{
+    margin: 8px;
+}
+
+.login-header{
+	text-align: center;
+	border-bottom: 2px solid #eee;
+	padding-top:1px;
+	padding-bottom:5px;
+}
+
+.login-header h3{
+	color: #666;
+	font-weight: normal;
+}
+
+#form-login{
+    max-width: 350px;
+    margin: auto;
+    background: white;
+    color: black;
+    margin-top: 100px;
+    box-shadow: 2px 9px 20px #888888;
+}
+
+#form-login .content{
+	width:100%;		
+    padding: 20px;
+}
+
+#form-login .content{
+	padding-top:20px;	
+}	
+
+#form-login input{
+    margin-bottom: 10px;
+}
+
+#form-login .label-login{
+	color: #666;
+	font-weight: normal;
+}
+
+#form-login .forget-pass{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:blue;
+	cursor: pointer;
+	font-size: 12pt;	
+	text-align:center;
+}
