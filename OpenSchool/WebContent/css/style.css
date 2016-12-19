@@ -1,10 +1,26 @@
 body{
-    background: #bdd7e5 url("../imgs/BG.PNG") no-repeat center;
+    background: url("../imgs/footer_lodyas.png");
     padding-top: 80px;
 }
 
 .panel{
     margin-bottom: 5px;
+}
+
+.navbar-brand img{
+	width: 40px;
+	float: left;
+	margin-top: -7px;
+}
+
+.navbar-brand span{
+	float: left;
+	padding-left: 5px;
+}
+
+#user_image_header{
+	width: 40px;
+	margin-top: 5px;
 }
 
 .menu-nav-left .listgroup a{
@@ -20,52 +36,37 @@ body{
 
 .conteudo_panel_int{
     margin: 8px;
+    padding-bottom: 15px;
+    min-height: 400px;
 }
 
-.login-header{
-	text-align: center;
-	border-bottom: 2px solid #eee;
-	padding-top:1px;
-	padding-bottom:5px;
+.user_label{
+	padding-right:10px;
+	padding-top:5px;
+	color:white;
+	text-align: right;
+	float:right;
 }
 
-.login-header h3{
-	color: #666;
-	font-weight: normal;
+.user_label span{
+	font-weight: bold;
 }
 
-#form-login{
-    max-width: 350px;
-    margin: auto;
-    background: white;
-    color: black;
-    margin-top: 100px;
-    box-shadow: 2px 9px 20px #888888;
+.dropdown{
+	float: right;
 }
 
-#form-login .content{
-	width:100%;		
-    padding: 20px;
+.dropdown img{
+	float: left;
 }
 
-#form-login .content{
-	padding-top:20px;	
+.dropdown a{
+	float: left;
 }	
 
-#form-login input{
-    margin-bottom: 10px;
-}
-
-#form-login .label-login{
-	color: #666;
-	font-weight: normal;
-}
-
-#form-login .forget-pass{
-	margin-top:10px;
-	margin-bottom:10px;
-	color:blue;
-	cursor: pointer;
-	font-size: 12pt;	
-	text-align:center;
+.chart-dashboard{
+	height: 200px;
+	float: left;	
+    box-shadow: 1px 1px 5px #888888;
+    border-radius: 10px;
 }
