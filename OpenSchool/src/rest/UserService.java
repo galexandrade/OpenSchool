@@ -70,6 +70,8 @@ public class UserService {
 	@Consumes(MediaType.APPLICATION_JSON + CHARSET_UTF8)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String addUser(User user){
+		System.out.println("AKIIIIIIIIIII");
+		
 		String result;
 		
 		try{
