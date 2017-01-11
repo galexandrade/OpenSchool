@@ -1,10 +1,16 @@
 $(function(){
-    //load_content("modules/home_dashboard.html");
-    load_content("modules/live_message.html");
-    
+	load_content("modules/home_dashboard.html");
+        
     $(".menu_item a").click(function(){
         load_content($(this).attr("href"));
         return false;
+    });
+    
+    $("#logout").click(function(){
+    	window.sessionStorage.clear();
+    	window.localStorage.clear();
+    	window.location.href = "login.html";
+    	return false;
     });
 });
 
