@@ -1,0 +1,229 @@
+<!-- top tiles -->
+<div class="row tile_count">
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-mortar-board"></i> Total Studants</span>
+        <div class="count green">500</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>4% </i> From last Quarter</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-male"></i> Total Males</span>
+        <div class="count">200</div>
+        <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>8.7 </i> Avarege Grade</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-female"></i> Total Females</span>
+        <div class="count">300</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>9.7 </i> Avarege Grade</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-suitcase"></i> Total Staff</span>
+        <div class="count">35</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>R$ 1.800,00 </i> Avarege Salary</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-rocket"></i> Total Iteractions</span>
+        <div class="count">2,315</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+        <div class="count">800</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+    </div>
+</div>
+<!-- /top tiles -->
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+            <div class="row x_title">
+                <div class="col-md-6">
+                    <h3>Network Activities <small>Information exchange</small></h3>
+                </div>
+                <div class="col-md-6">
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
+                <div style="width: 100%;">
+                    <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+                <div class="x_title">
+                    <h2>Informations exchange</h2>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>Message chat</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>Comments</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-blue" role="progressbar" data-transitiongoal="60"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>Likes</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-red" role="progressbar" data-transitiongoal="40"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>Media</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-orange" role="progressbar" data-transitiongoal="50"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="x_panel tile fixed_height_320 overflow_hidden">
+            <div class="x_title">
+                <h2>Studants Performance</h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table class="" style="width:100%">
+                    <tr>
+                        <th style="width:37%;">
+                            <p>Avarege grade</p>
+                        </th>
+                        <th>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                              <p class="">Status</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <p class="">Rate</p>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <canvas id="canvas1" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+                        </td>
+                        <td>
+                            <table class="tile_info">
+                                <tr>
+                                    <td>
+                                        <p><i class="fa fa-square blue"></i>Great </p>
+                                    </td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><i class="fa fa-square green"></i>Good </p>
+                                    </td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><i class="fa fa-square purple"></i>Regular </p>
+                                    </td>
+                                    <td>15%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><i class="fa fa-square red"></i>Need Attention </p>
+                                    </td>
+                                    <td>5%</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Studants location <small>Where they live</small></h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <div class="dashboard-widget-content">
+                    <div class="col-xs-4">
+                        <h2 class="line_30">Top neighborhood</h2>
+
+                        <table class="countries_list">
+                            <tbody>
+                                <tr>
+                                    <td>Costa e Silva</td>
+                                    <td class="fs15 fw700 text-right">33%</td>
+                                </tr>
+                                <tr>
+                                    <td>Bom Retiro</td>
+                                    <td class="fs15 fw700 text-right">27%</td>
+                                </tr>
+                                <tr>
+                                    <td>América</td>
+                                    <td class="fs15 fw700 text-right">16%</td>
+                                </tr>
+                                <tr>
+                                    <td>Centro</td>
+                                    <td class="fs15 fw700 text-right">11%</td>
+                                </tr>
+                                <tr>
+                                    <td>Outros</td>
+                                    <td class="fs15 fw700 text-right">10%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="map" class="col-xs-8" style="height:230px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Chart.js -->
+<script src="vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- Flot -->
+<script src="vendors/Flot/jquery.flot.js"></script>
+<script src="vendors/Flot/jquery.flot.pie.js"></script>
+<script src="vendors/Flot/jquery.flot.time.js"></script>
+<script src="vendors/Flot/jquery.flot.stack.js"></script>
+<script src="vendors/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="vendors/flot.curvedlines/curvedLines.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="vendors/moment/min/moment.min.js"></script>
+<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- Google Maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz9iY89GWF9CZED9deGFhYFcj72S5a_HE&callback=initMap"></script>
+
+<script src="js/openschool.charts.js"></script>  

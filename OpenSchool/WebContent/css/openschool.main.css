@@ -1,0 +1,207 @@
+/* MODULE: LIVE MESSAGE */
+#live_message{
+    height: 500px; 
+}
+
+#live_message .contacts{
+    height: 100%;
+}
+
+#live_message .conversation{
+    height: 100%;
+}
+
+#live_message .row{
+    height: 100%;
+}
+
+#live_message .message_header{
+    height: 15%;
+    color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#live_message .contacts .message_header{
+    background: #222B36;
+    border-radius: 20px 0px 0px 0px;
+}
+
+#live_message .conversation .message_header{
+    background: #E1E7ED;  
+    color: #7D858E;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#live_message .contacts_body{
+    height: 85%;
+    background: #262F3B;
+    overflow: auto;        
+}
+
+#live_message .contacts_body .search{
+    margin-top: 10px;
+}
+
+#live_message .contacts_body .search input{
+    width: 100%;
+}
+
+#live_message .contacts_body .user_list{
+    border-bottom: 1px solid #303843;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#live_message .contacts_body .user_list:hover{
+    background: #222B36;
+}
+
+#live_message .contacts_body .user_list .user-list-name{
+    color: white;
+    font-weight: bold;
+}
+
+#live_message .contacts_body .user_list .user-list-image{
+    width: 50px;
+}
+
+#live_message .contacts_body .user_list .user-list-status{
+    padding-top: 10px;
+    text-align: right;
+}
+
+#live_message .message_header h2{
+    float: left;
+}
+
+#live_message .message_header .menu_conversation{
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#live_message .message_header .icon_return{    
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+#live_message .conversation_body{
+    padding-top: 10px;
+    height: 70%;
+    background: #ECF1F5;
+    overflow: auto;
+}
+
+#live_message .conversation_body .conversation_list .user-list-image{
+    width: 30px;
+}
+
+#live_message .conversation_body .conversation_list .arrow{
+    float: left;
+    margin-left: -8px;
+    margin-top: 8px;
+}
+
+#live_message .conversation_body .conversation_list .arrow-right{
+    float: right;
+    margin-right: -8px;
+    margin-top: 8px;
+}
+
+#live_message .conversation_body .conversation_list .chat{
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    float: left;
+    padding: 15px 15px 5px 15px;
+    min-width: 150px;
+    clear: left;
+}
+
+#live_message .conversation_body .conversation_list .chat-right{
+    text-align: right;
+    background: #099AFF;
+    color: white;
+    float: right;
+    clear: right;
+    padding-right: 60px;
+}
+
+#live_message .conversation_body .conversation_list .chat-first{
+    clear: none;
+}
+
+#live_message .conversation_body .conversation_list .time{
+    float: right;
+    color: gainsboro;
+    font-size: 8pt;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#live_message .conversation_body .conversation_list .chat-right .time{
+    margin-right: -50px;
+}
+
+#live_message .message_footer{
+    height: 15%;
+    background: white;
+    border: 1px solid #DEDEDE;
+}
+
+#live_message .message_footer .message_icons{
+    padding: 5px;
+    padding-left: 10px;
+    margin-top:15px;
+    float: right;
+    cursor: pointer;
+    
+}
+
+#live_message .message_footer .message_send{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border-radius: 25px;
+    float: right;
+    margin-top: -65px;
+    z-index: 1;
+    position: relative;
+}
+
+#live_message .message_footer textarea{
+    border: 0px;
+    height: 80px;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    font-size: 12pt;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#live_message .message_footer textarea:hover{
+    border: 0px;
+}
+/* FIM MODULE: LIVE MESSAGE */
+
+
+/* SCHOOL MANAGEMENT */
+.kv-avatar .file-preview-frame,.kv-avatar .file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    max-width: 220px;
+    text-align: center;
+}
+/* FIM SCHOOL MANAGEMENT */
