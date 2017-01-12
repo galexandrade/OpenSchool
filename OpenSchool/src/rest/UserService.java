@@ -14,6 +14,7 @@ import javax.ws.rs.core.MediaType;
 
 import dao.UserDAO;
 import model.User;
+import utils.JWTService;
 
 @Path("/user")
 public class UserService {
@@ -107,12 +108,14 @@ public class UserService {
 	@Path("/authenticate/{login}/{password}")
 	@Consumes(MediaType.TEXT_PLAIN)
 	@Produces(MediaType.TEXT_PLAIN)
-	public boolean authenticateUser(@PathParam("login") String login, @PathParam("password") String password){
+	public String authenticateUser(@PathParam("login") String login, @PathParam("password") String password){
+		User user = UserDAO.getInstance().authenticateUser(login, password); 
 		try{
-			return UserDAO.getInstance().authenticateUser(login, password);
+			if(user != null)
+				return JWTService.generateKey(user);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		return false;
+		return "false";
 	}
 }

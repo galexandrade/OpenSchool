@@ -1,10 +1,11 @@
 $(function(){
+	USER_SESSION = "tokenId";
 	try{
 		if(window.sessionStorage || window.localStorage){
-			if(window.sessionStorage.getItem("user") !== null)
+			if(window.sessionStorage.getItem(USER_SESSION) !== null)
 				window.location.href = "index.html";
-			else if(window.localStorage.getItem("user") !== null){
-				window.sessionStorage.setItem("user", window.localStorage.getItem("user"));
+			else if(window.localStorage.getItem(USER_SESSION) !== null){
+				window.sessionStorage.setItem(USER_SESSION, window.localStorage.getItem(USER_SESSION));
 				window.location.href = "index.html";
 			}				
 		}
@@ -18,13 +19,12 @@ $(function(){
     	$.ajax({
     		url: "http://localhost:8080/OpenSchool/rest/user/authenticate/"+$("#input-email").val()+"/"+$("#input-pass").val()
     	}).done(function(result){
-    		if (result == "true"){
+    		if (result !== "false"){
     			$("#form-login .alert").addClass("hidden");
     			
-    			alert($("#remember").is(":checked"));
     			if($("#remember").is(":checked"))
-    				window.localStorage.setItem("user", $("#input-email").val());
-    			window.sessionStorage.setItem("user", $("#input-email").val());
+    				window.localStorage.setItem(USER_SESSION, result);
+    			window.sessionStorage.setItem(USER_SESSION, result);
     			
     			window.location.href = "index.html";
     		}    			

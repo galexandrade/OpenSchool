@@ -75,6 +75,11 @@
 	    <groupId>javassist</groupId>
 	    <artifactId>javassist</artifactId>
 	    <version>3.12.1.GA</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.jsonwebtoken</groupId>
+	    <artifactId>jjwt</artifactId>
+	    <version>0.7.0</version>
 	</dependency> 
   </dependencies>
 </project>
