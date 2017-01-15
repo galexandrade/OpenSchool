@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 
 import dao.UserDAO;
 import model.User;
-import utils.JWTService;
+import security.JWTService;
 
 @Path("/user")
 public class UserService {
@@ -109,10 +109,11 @@ public class UserService {
 	@Consumes(MediaType.TEXT_PLAIN)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String authenticateUser(@PathParam("login") String login, @PathParam("password") String password){
+		JWTService jwtService = new JWTService(); 
 		User user = UserDAO.getInstance().authenticateUser(login, password); 
 		try{
 			if(user != null)
-				return JWTService.generateKey(user);
+				return jwtService.encodeToken(user);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
