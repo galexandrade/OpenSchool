@@ -10,6 +10,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
+import exception.AppException;
 import model.User;
 import security.KeyObfuscator;
 
@@ -19,7 +20,7 @@ public class JWTService{
 	private static final String ISSUER = "totvs-task-manager";
 	private static final int EXPIRATION_DAYS = 10;
 
-	public String encodeToken(User user) throws Exception {
+	public String encodeToken(User user) throws AppException {
 		try {
 			return JWT.create()
 					.withIssuer(ISSUER)
@@ -29,11 +30,11 @@ public class JWTService{
 					.sign(Algorithm.HMAC512(SECRET));
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new Exception();
+			throw new AppException();
 		}
 	}
 
-	public User decodeToken(String token) throws Exception {
+	public User decodeToken(String token) throws AppException {
 		User user = null;
 
 		try {
@@ -49,7 +50,7 @@ public class JWTService{
 			user.setUserName(jwt.getClaim("userName").asString());
 			
 		} catch(JWTVerificationException | IllegalArgumentException | UnsupportedEncodingException e) {
-			throw new Exception(e);
+			throw new AppException(e);
 		}
 
 		return user;
