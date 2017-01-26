@@ -207,13 +207,30 @@
 /* FIM SCHOOL MANAGEMENT */
 
 /* STUDENTS MANAGEMENT */
+#students_datatable{
+	width: 100%;
+}
+
 #students_datatable tbody tr td{
 	cursor: pointer;
+}
+
+#students_datatable tbody tr td .btn-group{
+	white-space: nowrap;
 }
 
 #students_datatable tbody tr:hover button{
 	visibility: visible;
 }
+
+#students_datatable tbody tr td .btn-group{
+	float:right;
+}
+
+#students_datatable tbody tr td .btn-group .dropdown-menu{
+	margin-left:-160px;
+	margin-top:-22px;
+}	
 
 #students_datatable tbody tr td button{
 	height: 22px;
