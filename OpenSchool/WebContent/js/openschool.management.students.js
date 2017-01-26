@@ -1,7 +1,7 @@
 $(function(){    
 	var handleDataTableButtons = function() {
-        if ($("#datatable-buttons").length) {
-          $("#datatable-buttons").DataTable({
+        if ($("#students_datatable").length) {
+          $("#students_datatable").DataTable({
             dom: "Bfrtip",
             buttons: [
               {

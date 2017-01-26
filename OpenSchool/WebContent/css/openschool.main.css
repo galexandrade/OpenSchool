@@ -205,3 +205,21 @@
     text-align: center;
 }
 /* FIM SCHOOL MANAGEMENT */
+
+/* STUDENTS MANAGEMENT */
+#students_datatable tbody tr td{
+	cursor: pointer;
+}
+
+#students_datatable tbody tr:hover button{
+	visibility: visible;
+}
+
+#students_datatable tbody tr td button{
+	height: 22px;
+    padding: 2px 10px 5px 10px;
+    margin: 0px;
+    float: right;
+    visibility: hidden;
+}
+/* FIM STUDENTS MANAGEMENT */

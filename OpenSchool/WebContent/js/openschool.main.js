@@ -1,5 +1,5 @@
 $(function(){
-	load_content("modules/home_dashboard.html");
+	load_content("modules/students_management.html");
         
     $(".menu_item a").click(function(){
         load_content($(this).attr("href"));
